@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-surface: #FDFBF7;
+    --bg-card: #F7F2E8;
+    --border-color: rgba(229, 152, 102, 0.25);
+    --accent-glow: rgba(255, 176, 0, 0.2);
+  }
+
+  .dark {
+    --bg-surface: #141417;
+    --bg-card: #1A1A20;
+    --border-color: rgba(255, 140, 0, 0.25);
+    --accent-glow: rgba(255, 69, 0, 0.25);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars matching sunset aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 152, 102, 0.35);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 0, 0.35);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 152, 102, 0.6);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 140, 0, 0.6);
+}

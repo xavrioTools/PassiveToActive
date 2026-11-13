@@ -1,0 +1,6 @@
+{
+  "name": "ActiveVoice AI: Passive-to-Active Voice Converter",
+  "description": "Intelligent real-time text processor that highlights passive voice, delivers instant active voice conversions, explanations, and one-click replacements with editorial readability scoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
